@@ -1,0 +1,18 @@
+---
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  name: Foo
+objects:
+- apiVersion: v1
+  kind: ProjectRequest
+  metadata:
+    name: Bar
+- apiVersion: v1
+  kind: ResourceQuota
+  metadata:
+    name: Bar
+- apiVersion: v1
+  kind: LimitRange
+  metadata:
+    name: Bar
